@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './components/App.tsx'
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
+import TodosContextProvider from "./contexts/TodosContextProvider.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -12,7 +13,9 @@ createRoot(document.getElementById('root')!).render(
       redirectUri="http://localhost:5173"
       logoutUri="http://localhost:5173"
     >
-      <App />
+      <TodosContextProvider>
+        <App />
+      </TodosContextProvider>
     </KindeProvider>
 
   </StrictMode>,
