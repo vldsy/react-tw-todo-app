@@ -1,12 +1,21 @@
+import BackgroundHeading from "./BackgroundHeading";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
+import TodoList from "./TodoList";
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <div>
+      <BackgroundHeading />
+      <main>
+        <Header />
+        <TodoList />
+        <Sidebar />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
