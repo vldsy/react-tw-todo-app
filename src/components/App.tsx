@@ -7,7 +7,7 @@ import TodoList from "./TodoList";
 function App() {
 
   return (
-    <div>
+    <div className="font-sans bg-[#f1d4b3] min-h-screen flex justify-center items-center flex-col">
       <BackgroundHeading />
       <main>
         <Header />
